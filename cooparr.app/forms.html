@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            background-color: #e0f2f1; /* Cor de fundo azul claro */
+        }
+        #formulario {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h2>Formulário de Cadastro</h2>
+        <form id="cadastroForm">
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required><br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj"><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label for="produtos">Produtos:</label>
+            <input type="text" id="produtos" name="produtos" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("cadastroForm");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            enviarEmail();
+        });
+
+        function enviarEmail() {
+            // Código para enviar um email para contatocooparr@gmail.com
+            alert("Cadastro concluído. Email enviado para contatocooparr@gmail.com");
+            form.reset();
+        }
+    </script>
+</body>
+</html>

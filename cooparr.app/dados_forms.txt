@@ -1,0 +1,13 @@
+criar um formulario usando javascript com os seguintes campos;
+Quado terminar o cadastro enviar um email para contatocooparr@gmail.com
+
+
+Nome completo
+cpf
+endereço
+Cnpj
+telefone
+produtos
+email
+ 
+Fundo do formulario azul claro
